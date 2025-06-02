@@ -1,3 +1,4 @@
+![CI/CD](https://github.com/Relbi3000/sreproject1/actions/workflows/ci-cd.yml/badge.svg)
 
 ---
 
