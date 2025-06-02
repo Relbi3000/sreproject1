@@ -1,0 +1,12 @@
+<div class="card mx-auto" style="max-width: 500px;">
+    <div class="card-header">
+      <h4>Регистрация на событие: <%= event.name %></h4>
+    </div>
+    <div class="card-body">
+      <p>Вы вошли в систему как: <%= user.id %></p>
+      <form action="/registrations/register/<%= event._id %>" method="POST">
+        <button type="submit" class="btn btn-primary w-100">Зарегистрироваться</button>
+      </form>
+    </div>
+  </div>
+  

@@ -1,0 +1,79 @@
+body {
+    background-color: #eef2f3; /* Более мягкий фон */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Стиль для header и footer */
+header, footer {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Стиль для карточек */
+.card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Стили для навигации */
+.navbar {
+    background: linear-gradient(135deg, #0056b3, #003b80);
+    padding: 10px 20px;
+}
+
+a.nav-link {
+    color: white !important;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+a.nav-link:hover {
+    color: #cce5ff !important;
+    text-decoration: underline;
+}
+
+/* Кнопки с градиентами */
+.btn-primary {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0056b3, #004080);
+}
+
+/* Новый стиль для форм */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Улучшенный стиль кнопок */
+.btn {
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 15px;
+    }
+}

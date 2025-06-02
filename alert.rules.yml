@@ -1,0 +1,11 @@
+groups:
+  - name: nodejs-alerts
+    rules:
+      - alert: HighSuccessRate
+        expr: sum(rate(http_requests_total{code="200"}[1m])) by (code) > 1
+        for: 1m
+        labels:
+          severity: info
+        annotations:
+          summary: "Высокий процент успешных запросов 200"
+          description: "Больше 1 успешного запроса (200) в минуту на сервисе"
